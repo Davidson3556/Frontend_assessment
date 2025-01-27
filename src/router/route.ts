@@ -7,9 +7,19 @@ const routes = [
         component: () => import('../views/Home.vue'),
     },
     {
-        path: '/store',
-        meta: { title: 'store' },
-        component: () => import('../views/Store.vue'),
+        path: '/Individualaccount',
+        meta: { title: 'IndividualAccount' },
+        component: () => import('../views/IndividualAccount.vue'),
+    },
+    {
+        path: '/Businessaccount',
+        meta: { title: 'BusinessAccount' },
+        component: () => import('../views/BusinessAccount.vue'),
+    },
+    {
+        path: '/Pass',
+        meta: { title: 'Pass' },
+        component: () => import('../views/Pass.vue'),
     },
     {
         path: '/:catchAll(.*)*',

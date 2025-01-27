@@ -1,23 +1,17 @@
-<script setup lang="ts">
-</script>
-
 <template>
-  <div class="flex flex-col items-center justify-center w-full h-screen bg-[#F8F9FF] p-4">
-    <img
-      class="mb-4"
-      src="https://res.cloudinary.com/dufimctfc/image/upload/v1719761079/errorpage_kkjhkb.svg"
-      alt="gradient"
-    />
-    <div class="flex flex-col items-center justify-center mb-5 text-center">
-      <p class="text-2xl font-bold text-[#111827] md:text-3xl lg:text-4xl">
-        Page not Found
+  <div class="flex flex-col items-center justify-center h-screen bg-gray-50 text-center p-4">
+    <div class="bg-white shadow-lg rounded-2xl p-8 max-w-md w-full">
+      <h1 class="text-6xl font-extrabold text-blue-500 mb-4">404</h1>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-2">Page Not Found</h2>
+      <p class="text-gray-600 mb-6">
+        Oops! The page you're looking for doesn't exist or has been moved.
       </p>
-      <p class="mt-4 text-sm text-[#6B7280] md:text-lg lg:text-xl">
-        Oops! Looks like you followed a bad link. If you think this is a problem with us, please tell us.
-      </p>
+      <button 
+        @click="" 
+        class="bg-[#3C3B6E] hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg transition"
+      >
+        Go Back Home
+      </button>
     </div>
-    <Button class="w-auto bg-[#BAEF23] hover:bg-lime-500 rounded-full">
-      <a href="/" class="block p-4 font-bold text-[#020721]">Go Home</a>
-    </Button>
   </div>
 </template>

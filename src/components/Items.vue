@@ -5,11 +5,9 @@
        </div>
   </XyzTransitionGroup>
 
-  
-
   <XyzTransitionGroup xyz="fade small stagger">
-
-    <router-link to="/Individualaccount"
+    <router-link
+      to="/Individualaccount"
       v-if="show"
       class="flex mt-5 mx-5 gap-2 bg-[#F4F4F4] p-4 md:w-[32rem] min-h-[10rem] items-center rounded-xl justify-center transform transition hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 focus:outline focus:outline-2 focus:outline-blue-500"
     >
@@ -35,13 +33,9 @@
           <p class="text-lg py-1 text-[#1F201D] font-bold">Business Account</p>
           <p class="text-sm font-normal py-1">Ideal for business transactions.<br/> Manage your finances efficiently <br/> with no hidden costs.</p>
         </div>
-     
-    </main>
-  </router-link>
-
+      </main>
+    </router-link>
   </XyzTransitionGroup>
- 
-  
 </template>
 
 <script lang="ts" setup>

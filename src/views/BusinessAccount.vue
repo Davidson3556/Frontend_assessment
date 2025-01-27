@@ -1,10 +1,9 @@
 <template>
-  <h1></h1>
   <section class="md:flex flex-col justify-center items-center">
     <Items />
   </section>
 </template>
 
 <script setup lang="ts">
-import Items from "../components/Items.vue";
+import Items from "../components/Business.vue";
 </script>
