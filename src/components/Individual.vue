@@ -1,10 +1,10 @@
 <template>
   <XyzTransitionGroup xyz="fade small stagger">
     <div xyz="fade big" v-if="show" class="text-center px-4">
-      <h1 class="text-[#3C3B6E] text-2xl font-bold sm:text-3xl">
+      <h1 class="text-[#3C3B6E] dark:text-[#ADACFF] text-2xl font-bold sm:text-3xl">
         Create your Individual Account
       </h1>
-      <p class="text-base font-normal text-[#1F201D] mt-2 sm:text-lg">
+      <p class="text-base font-normal text-[#1F201D] dark:text-[#F1F1F1] mt-2 sm:text-lg">
         Let's get started on setting up your personal SwapMoney account.
       </p>
     </div>
@@ -18,7 +18,7 @@
       v-model="phoneNumber"
       defaultCountry="gb"
       placeholder="Enter your phone number"
-      class="flex-1 text-[#1F201D] !w-full !max-w-md !rounded-2xl !bg-[#F4F4F4] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+      class="flex-1 text-[#1F201D] dark:text-[#F1F1F1] !w-full !max-w-md !rounded-2xl !bg-[#F4F4F4] dark:!bg-[#3C3B6E59] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
     />
   </div>
 
@@ -29,7 +29,7 @@
       type="email"
       placeholder="Email Address"
       @blur="validateEmail"
-      class="w-full bg-[#F4F4F4] text-[#1F201D] rounded-2xl px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+      class="w-full bg-[#F4F4F4] dark:bg-[#3C3B6E59] text-[#1F201D] dark:text-[#F1F1F1] rounded-2xl px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
     />
   </div>
   <p v-if="emailError" class="text-red-500 text-sm mt-1 text-center">
@@ -43,7 +43,7 @@
       type="text"
       placeholder="First Name"
       @blur="validateFirstName"
-      class="w-full bg-[#F4F4F4] text-[#1F201D] rounded-2xl px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+      class="w-full bg-[#F4F4F4] text-[#1F201D] dark:text-[#F1F1F1] dark:bg-[#3C3B6E59] rounded-2xl px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
     />
   </div>
   <p v-if="firstNameError" class="text-red-500 text-sm mt-1 text-center">

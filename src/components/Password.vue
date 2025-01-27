@@ -4,22 +4,22 @@
     xyz="fade small"
   >
     <div class="text-center px-4" xyz="fade big" v-if="show">
-      <h1 class="text-[#3C3B6E] text-2xl font-bold sm:text-3xl">
+      <h1 class="text-[#3C3B6E] dark:text-[#ADACFF] text-2xl font-bold sm:text-3xl">
         Enter your Preferred Password
       </h1>
-      <p class="text-base font-normal text-[#1F201D] mt-2 sm:text-lg">
+      <p class="text-base font-normal text-[#1F201D] dark:text-[#F1F1F1] mt-2 sm:text-lg">
         Create a strong password to keep your SwapMoney account safe.
       </p>
     </div>
   </XyzTransitionGroup>
 
   <!-- Password Field -->
-  <div class="relative mt-4 w-full max-w-md px-2">
+  <div class="relative mt-8 w-full max-w-md px-2">
     <input
       v-model="password"
       :type="showPassword ? 'text' : 'password'"
       placeholder="Password"
-      class="w-full bg-[#F4F4F4] text-[#1F201D] rounded-2xl px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+      class="w-full bg-[#F4F4F4] dark:bg-[#3C3B6E59] text-[#1F201D] dark:text-[#F1F1F1] rounded-2xl px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
     />
     <span
       class="absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
@@ -70,7 +70,7 @@
       v-model="confirmPassword"
       :type="showConfirmPassword ? 'text' : 'password'"
       placeholder="Confirm Password"
-      class="w-full bg-[#F4F4F4] text-[#1F201D] rounded-2xl px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+      class="w-full bg-[#F4F4F4] dark:bg-[#3C3B6E59] text-[#1F201D] dark:text-[#F1F1F1] rounded-2xl px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
     />
     <span
       class="absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
