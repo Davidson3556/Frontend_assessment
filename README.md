@@ -17,7 +17,3 @@ This template should help get you started developing with Vue 3 and Typescript i
 - 🔥 Use the new `<script setup>` style
 
 - 🦾 TypeScript, of course
-
-
-
-

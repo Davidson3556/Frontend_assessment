@@ -1,15 +1,15 @@
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
-export const useStore = defineStore('counter', {
+export const useStore = defineStore("counter", {
   state: () => {
-    return { count: 0, name: 'Atif', show: false }
+    return { count: 0, name: "Atif", show: false };
   },
   actions: {
     increment() {
-      this.count++
+      this.count++;
     },
     decrement() {
-      this.count--
+      this.count--;
     },
   },
-})
+});

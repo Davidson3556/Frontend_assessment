@@ -4,7 +4,7 @@
 
 <template>
   <section class="bg-[#FFFFFF]">
-      <!-- <Navbar /> -->
+    <!-- <Navbar /> -->
     <main class="min-h-screen container mx-auto">
       <div class="py-24">
         <router-view />

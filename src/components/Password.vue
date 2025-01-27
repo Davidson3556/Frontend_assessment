@@ -3,7 +3,7 @@
     class="head flex justify-center items-center item-group"
     xyz="fade small"
   >
-  <div class="text-center px-4" xyz="fade big" v-if="show ">
+    <div class="text-center px-4" xyz="fade big" v-if="show">
       <h1 class="text-[#3C3B6E] text-2xl font-bold sm:text-3xl">
         Enter your Preferred Password
       </h1>
@@ -14,9 +14,8 @@
   </XyzTransitionGroup>
 
   <!-- Password Field -->
-  <div  class="relative mt-4 w-full max-w-md px-2" >
+  <div class="relative mt-4 w-full max-w-md px-2">
     <input
-    
       v-model="password"
       :type="showPassword ? 'text' : 'password'"
       placeholder="Password"
@@ -40,11 +39,7 @@
           stroke-linejoin="round"
           d="M13.875 18.825A10.05 10.05 0 0112 19c-4.418 0-8-4-8-4s1.791-2.682 4.512-4.243m7.004-.556C17.617 12.4 20 15 20 15s-3.582 4-8 4a9.96 9.96 0 01-3.872-.8m7.743-5.368a2.25 2.25 0 11-3.181-3.181"
         />
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3 3l18 18"
-        />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3l18 18" />
       </svg>
       <svg
         v-else
@@ -95,11 +90,7 @@
           stroke-linejoin="round"
           d="M13.875 18.825A10.05 10.05 0 0112 19c-4.418 0-8-4-8-4s1.791-2.682 4.512-4.243m7.004-.556C17.617 12.4 20 15 20 15s-3.582 4-8 4a9.96 9.96 0 01-3.872-.8m7.743-5.368a2.25 2.25 0 11-3.181-3.181"
         />
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3 3l18 18"
-        />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3l18 18" />
       </svg>
       <svg
         v-else
@@ -126,37 +117,37 @@
 
   <footer class="w-full mt-12 py-4 px-4">
     <div class="max-w-md mx-auto">
-      <router-link to="/pass" >
-      <Button
-        class="bg-[#3C3B6E] rounded-md text-[#FFFFFF] h-14 w-full"
-        @click="handleSubmit"
-        :disabled="loading"
-      >
-      <span v-if="loading" class="flex items-center justify-center">
-          <svg
-            class="animate-spin h-5 w-5 mr-2 text-white"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <circle
-              class="opacity-25"
-              cx="12"
-              cy="12"
-              r="10"
-              stroke="currentColor"
-              stroke-width="4"
-            ></circle>
-            <path
-              class="opacity-75"
-              fill="currentColor"
-              d="M4 12a8 8 0 018-8v8z"
-            ></path>
-          </svg>
-          Loading...
-        </span>
-        <span v-else>Next</span>
-            </Button>
+      <router-link to="/pass">
+        <Button
+          class="bg-[#3C3B6E] rounded-md text-[#FFFFFF] h-14 w-full"
+          @click="handleSubmit"
+          :disabled="loading"
+        >
+          <span v-if="loading" class="flex items-center justify-center">
+            <svg
+              class="animate-spin h-5 w-5 mr-2 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              ></circle>
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8v8z"
+              ></path>
+            </svg>
+            Loading...
+          </span>
+          <span v-else>Next</span>
+        </Button>
       </router-link>
     </div>
   </footer>
@@ -181,7 +172,9 @@ const loading = ref<boolean>(false);
 // Vue Router instance
 const router = useRouter();
 
-const togglePasswordVisibility = (field: "password" | "confirmPassword"): void => {
+const togglePasswordVisibility = (
+  field: "password" | "confirmPassword",
+): void => {
   if (field === "password") {
     showPassword.value = !showPassword.value;
   } else {
@@ -207,5 +200,3 @@ const handleSubmit = () => {
   }, 2000);
 };
 </script>
-
-

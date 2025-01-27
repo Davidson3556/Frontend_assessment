@@ -1,7 +1,6 @@
 <template>
   <XyzTransitionGroup xyz="fade small stagger">
-    <div xyz="fade big" v-if="show "
-    class="text-center px-4">
+    <div xyz="fade big" v-if="show" class="text-center px-4">
       <h1 class="text-[#3C3B6E] text-2xl font-bold sm:text-3xl">
         Create your Business Account
       </h1>
@@ -15,7 +14,7 @@
   <div
     class="flex items-center space-x-3 w-full max-w-md bg-gray-100 rounded-2xl px-4 py-3 mt-6 mx-auto"
   >
- <Vue3PhoneInput
+    <Vue3PhoneInput
       v-model="phoneNumber"
       defaultCountry="gb"
       placeholder="Enter your phone number"
@@ -24,7 +23,7 @@
   </div>
 
   <!-- Email Input -->
-  <div class="mt-4 w-full max-w-md mx-auto px-4 ">
+  <div class="mt-4 w-full max-w-md mx-auto px-4">
     <input
       v-model="email"
       type="email"
@@ -87,11 +86,8 @@ const validateEmail = () => {
 };
 
 const validateFirstName = () => {
-  firstNameError.value = firstName.value
-    ? ""
-    : "First name cannot be empty.";
+  firstNameError.value = firstName.value ? "" : "First name cannot be empty.";
 };
-
 
 let show = ref(false);
 onMounted(() => {
