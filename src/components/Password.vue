@@ -4,10 +4,14 @@
     xyz="fade small"
   >
     <div class="text-center px-4" xyz="fade big" v-if="show">
-      <h1 class="text-[#3C3B6E] dark:text-[#ADACFF] text-2xl font-bold sm:text-3xl">
+      <h1
+        class="text-[#3C3B6E] dark:text-[#ADACFF] text-2xl font-bold sm:text-3xl"
+      >
         Enter your Preferred Password
       </h1>
-      <p class="text-base font-normal text-[#1F201D] dark:text-[#F1F1F1] mt-2 sm:text-lg">
+      <p
+        class="text-base font-normal text-[#1F201D] dark:text-[#F1F1F1] mt-2 sm:text-lg"
+      >
         Create a strong password to keep your SwapMoney account safe.
       </p>
     </div>

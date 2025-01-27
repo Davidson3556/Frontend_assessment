@@ -8,7 +8,9 @@ if (localStorage.getItem("theme") === "dark") {
 </script>
 
 <template>
-  <section class="bg-[#FFFFFF] text-gray-800 dark:bg-[#12152B] dark:text-[#F1F1F1] transition-colors duration-300">
+  <section
+    class="bg-[#FFFFFF] text-gray-800 dark:bg-[#12152B] dark:text-[#F1F1F1] transition-colors duration-300"
+  >
     <header class="p-4 flex justify-end">
       <!-- Use the ThemeToggle component -->
       <ThemeToggle />

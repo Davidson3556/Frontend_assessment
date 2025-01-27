@@ -55,4 +55,3 @@ npm run lint
 - 🔥 Use the new `<script setup>` style
 
 - 🦾 TypeScript, of course
-

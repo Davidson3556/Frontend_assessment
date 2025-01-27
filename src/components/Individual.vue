@@ -1,10 +1,14 @@
 <template>
   <XyzTransitionGroup xyz="fade small stagger">
     <div xyz="fade big" v-if="show" class="text-center px-4">
-      <h1 class="text-[#3C3B6E] dark:text-[#ADACFF] text-2xl font-bold sm:text-3xl">
+      <h1
+        class="text-[#3C3B6E] dark:text-[#ADACFF] text-2xl font-bold sm:text-3xl"
+      >
         Create your Individual Account
       </h1>
-      <p class="text-base font-normal text-[#1F201D] dark:text-[#F1F1F1] mt-2 sm:text-lg">
+      <p
+        class="text-base font-normal text-[#1F201D] dark:text-[#F1F1F1] mt-2 sm:text-lg"
+      >
         Let's get started on setting up your personal SwapMoney account.
       </p>
     </div>
