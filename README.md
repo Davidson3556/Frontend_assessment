@@ -1,8 +1,8 @@
-# Swapmoney frontend assessment 
+# Swapmoney frontend assessment
 
-This template is developed with Vue 3 in Vite using  Typescript , Vite , Tailwind , AnimXYZ
+This template is developed with Vue 3 in Vite using Typescript , Vite , Tailwind , AnimXYZ
+
 ## Features
-
 
 ## Recommended IDE Setup
 
@@ -30,8 +30,6 @@ npm run dev
 
 ### Type-Check, Compile and Minify for Production
 
-
-
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
@@ -42,7 +40,7 @@ npm run test:unit
 
 ```sh
 npm run lint
-
+```
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), - Lightning Fast HMR
 
@@ -57,4 +55,4 @@ npm run lint
 - 🔥 Use the new `<script setup>` style
 
 - 🦾 TypeScript, of course
-```
+

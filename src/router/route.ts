@@ -28,8 +28,12 @@ const routes = [
     component: () => import("../views/404.vue"),
   },
 ];
+
+// Modify createWebHistory to handle the base URL for Vercel (.app domain)
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/"), // If your app is deployed at the root, use '/'
+  // OR
+  // history: createWebHistory('/your-subpath/'),  // If it's deployed under a subpath, use the appropriate path
   routes,
   linkExactActiveClass: "text-yellow",
 });

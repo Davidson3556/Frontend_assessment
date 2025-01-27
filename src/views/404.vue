@@ -1,19 +1,29 @@
 <template>
-  <div
-    class="flex flex-col items-center justify-center h-screen bg-gray-50 text-center p-4"
-  >
-    <div class="bg-white shadow-lg rounded-2xl p-8 max-w-md w-full">
-      <h1 class="text-6xl font-extrabold text-blue-500 mb-4">404</h1>
-      <h2 class="text-2xl font-semibold text-gray-800 mb-2">Page Not Found</h2>
-      <p class="text-gray-600 mb-6">
-        Oops! The page you're looking for doesn't exist or has been moved.
-      </p>
-      <button
-        @click=""
-        class="bg-[#3C3B6E] hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg transition"
-      >
-        Go Back Home
-      </button>
+  <div class="h-full w-full bg-gray-50 flex items-center">
+    <div
+      class="container flex flex-col md:flex-row items-center justify-between px-5 text-gray-700"
+    >
+      <div class="w-full lg:w-1/2 mx-8">
+        <div class="text-7xl text-[#3C3B6E] font-dark font-extrabold mb-8">
+          404
+        </div>
+        <p class="text-2xl md:text-3xl font-light leading-normal mb-8">
+          Sorry we couldn't find the page you're looking for
+        </p>
+
+        <a
+          href="/"
+          class="px-5 inline py-3 text-sm font-medium leading-5 shadow-2xl text-white transition-all duration-400 border border-transparent rounded-lg focus:outline-none bg-[#3C3B6E] hover:bg-[#3C3B6E59]"
+          >back to homepage</a
+        >
+      </div>
+      <div class="w-full lg:flex lg:justify-end lg:w-1/2 mx-5 my-12">
+        <img
+          src="https://user-images.githubusercontent.com/43953425/166269493-acd08ccb-4df3-4474-95c7-ad1034d3c070.svg"
+          class=""
+          alt="Page not found"
+        />
+      </div>
     </div>
   </div>
 </template>

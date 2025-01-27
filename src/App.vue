@@ -13,13 +13,5 @@
   </section>
 </template>
 <style lang="postcss">
-body::-webkit-scrollbar {
-  @apply w-[1px];
-}
-body::-webkit-scrollbar-track {
-  @apply bg-gray;
-}
-body::-webkit-scrollbar-thumb {
-  @apply bg-yellow;
-}
+
 </style>
